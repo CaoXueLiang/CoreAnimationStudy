@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  CoreAniationStudy
+//
+//  Created by bjovov on 2017/8/25.
+//  Copyright © 2017年 ovov.cn. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define KScreenWidth   self.view.bounds.size.width
+#define KscreenHeight  self.view.bounds.size.height
+
+#endif /* PrefixHeader_pch */
