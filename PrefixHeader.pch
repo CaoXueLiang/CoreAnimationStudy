@@ -10,4 +10,6 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <Masonry/Masonry.h>
+#define KScreenWidth   self.view.bounds.size.width
+#define KscreenHeight  self.view.bounds.size.height
 #endif

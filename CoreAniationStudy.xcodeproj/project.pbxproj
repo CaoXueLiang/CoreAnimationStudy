@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		15FD472E170229F4E7100937 /* libPods-CoreAniationStudy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D1EA7757C6E9EA07045D3C /* libPods-CoreAniationStudy.a */; };
+		5815EBD21F57A56F00853003 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5815EBD11F57A56F00853003 /* AVFoundation.framework */; };
+		5815EBD41F57A63B00853003 /* colorfulStreak.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 5815EBD31F57A63B00853003 /* colorfulStreak.m4v */; };
+		5815EBD71F57E1CC00853003 /* ReplicatorParameterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5815EBD61F57E1CC00853003 /* ReplicatorParameterCell.m */; };
+		5815EBDA1F57EA9200853003 /* ReflectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5815EBD91F57EA9200853003 /* ReflectionView.m */; };
+		5815EBE71F58295400853003 /* TrackBallModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5815EBE61F58295400853003 /* TrackBallModel.m */; };
 		58401EA51F557180001310CD /* MLImageNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58401EA41F557180001310CD /* MLImageNormalCell.m */; };
 		58401EA81F55729A001310CD /* MLImageNormalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58401EA71F55729A001310CD /* MLImageNormalModel.m */; };
 		58401EAC1F56599A001310CD /* CALayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58401EAB1F56599A001310CD /* CALayerController.m */; };
@@ -34,6 +39,7 @@
 		58970D1B1F189EAD00ED7F5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58970D191F189EAD00ED7F5F /* LaunchScreen.storyboard */; };
 		58970D261F189EAD00ED7F5F /* CoreAniationStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58970D251F189EAD00ED7F5F /* CoreAniationStudyTests.m */; };
 		58970D311F189EAD00ED7F5F /* CoreAniationStudyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58970D301F189EAD00ED7F5F /* CoreAniationStudyUITests.m */; };
+		58BA1B1E1F58FD59009A8B1C /* SpacePointModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BA1B1D1F58FD59009A8B1C /* SpacePointModel.m */; };
 		58E62C521F4FB71B00B6196B /* ViewAnimationsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E62C511F4FB71B00B6196B /* ViewAnimationsController.m */; };
 		58E62C551F4FB93800B6196B /* MyNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E62C541F4FB93800B6196B /* MyNormalCell.m */; };
 		58E62C5C1F4FCF9600B6196B /* CustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E62C5B1F4FCF9600B6196B /* CustomLayer.m */; };
@@ -60,6 +66,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5815EBD11F57A56F00853003 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5815EBD31F57A63B00853003 /* colorfulStreak.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = colorfulStreak.m4v; sourceTree = "<group>"; };
+		5815EBD51F57E1CC00853003 /* ReplicatorParameterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplicatorParameterCell.h; sourceTree = "<group>"; };
+		5815EBD61F57E1CC00853003 /* ReplicatorParameterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplicatorParameterCell.m; sourceTree = "<group>"; };
+		5815EBD81F57EA9200853003 /* ReflectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectionView.h; sourceTree = "<group>"; };
+		5815EBD91F57EA9200853003 /* ReflectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectionView.m; sourceTree = "<group>"; };
+		5815EBE51F58295400853003 /* TrackBallModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackBallModel.h; sourceTree = "<group>"; };
+		5815EBE61F58295400853003 /* TrackBallModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackBallModel.m; sourceTree = "<group>"; };
 		58401EA31F557180001310CD /* MLImageNormalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLImageNormalCell.h; sourceTree = "<group>"; };
 		58401EA41F557180001310CD /* MLImageNormalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLImageNormalCell.m; sourceTree = "<group>"; };
 		58401EA61F55729A001310CD /* MLImageNormalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLImageNormalModel.h; sourceTree = "<group>"; };
@@ -113,11 +127,12 @@
 		58970D2C1F189EAD00ED7F5F /* CoreAniationStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreAniationStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58970D301F189EAD00ED7F5F /* CoreAniationStudyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAniationStudyUITests.m; sourceTree = "<group>"; };
 		58970D321F189EAD00ED7F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58BA1B1C1F58FD59009A8B1C /* SpacePointModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpacePointModel.h; sourceTree = "<group>"; };
+		58BA1B1D1F58FD59009A8B1C /* SpacePointModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpacePointModel.m; sourceTree = "<group>"; };
 		58E62C501F4FB71B00B6196B /* ViewAnimationsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewAnimationsController.h; sourceTree = "<group>"; };
 		58E62C511F4FB71B00B6196B /* ViewAnimationsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewAnimationsController.m; sourceTree = "<group>"; };
 		58E62C531F4FB93800B6196B /* MyNormalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNormalCell.h; sourceTree = "<group>"; };
 		58E62C541F4FB93800B6196B /* MyNormalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNormalCell.m; sourceTree = "<group>"; };
-		58E62C591F4FC44100B6196B /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		58E62C5A1F4FCF9600B6196B /* CustomLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLayer.h; sourceTree = "<group>"; };
 		58E62C5B1F4FCF9600B6196B /* CustomLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLayer.m; sourceTree = "<group>"; };
 		58E62C5D1F5022E900B6196B /* KeyFrameAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyFrameAnimationController.h; sourceTree = "<group>"; };
@@ -136,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5815EBD21F57A56F00853003 /* AVFoundation.framework in Frameworks */,
 				585BC6131F54178200F28476 /* CoreText.framework in Frameworks */,
 				15FD472E170229F4E7100937 /* libPods-CoreAniationStudy.a in Frameworks */,
 			);
@@ -167,6 +183,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5815EBE41F5828EB00853003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5815EBE51F58295400853003 /* TrackBallModel.h */,
+				5815EBE61F58295400853003 /* TrackBallModel.m */,
+				58BA1B1C1F58FD59009A8B1C /* SpacePointModel.h */,
+				58BA1B1D1F58FD59009A8B1C /* SpacePointModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		58401ECB1F568F64001310CD /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +205,8 @@
 				58401ED31F569444001310CD /* OneSliderCell.m */,
 				58401ED51F569458001310CD /* TwoSliderCell.h */,
 				58401ED61F569458001310CD /* TwoSliderCell.m */,
+				5815EBD51F57E1CC00853003 /* ReplicatorParameterCell.h */,
+				5815EBD61F57E1CC00853003 /* ReplicatorParameterCell.m */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -187,6 +216,8 @@
 			children = (
 				58401ED91F56B963001310CD /* ScrollingView.h */,
 				58401EDA1F56B963001310CD /* ScrollingView.m */,
+				5815EBD81F57EA9200853003 /* ReflectionView.h */,
+				5815EBD91F57EA9200853003 /* ReflectionView.m */,
 			);
 			name = LayerViews;
 			path = SubLayers;
@@ -224,6 +255,7 @@
 		585BC6111F54178200F28476 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5815EBD11F57A56F00853003 /* AVFoundation.framework */,
 				585BC6121F54178200F28476 /* CoreText.framework */,
 				B4D1EA7757C6E9EA07045D3C /* libPods-CoreAniationStudy.a */,
 			);
@@ -256,6 +288,7 @@
 		58970D0A1F189EAD00ED7F5F /* CoreAniationStudy */ = {
 			isa = PBXGroup;
 			children = (
+				5815EBE41F5828EB00853003 /* Models */,
 				58401ED81F56B8DB001310CD /* LayerViews */,
 				58401ECB1F568F64001310CD /* TableViewCell */,
 				585BC60A1F53FE1100F28476 /* ExclusiveLayerControllers */,
@@ -264,13 +297,13 @@
 				58970D0F1F189EAD00ED7F5F /* AppDelegate.m */,
 				58970D111F189EAD00ED7F5F /* ViewController.h */,
 				58970D121F189EAD00ED7F5F /* ViewController.m */,
+				5815EBD31F57A63B00853003 /* colorfulStreak.m4v */,
 				58970D171F189EAD00ED7F5F /* Assets.xcassets */,
 				58970D191F189EAD00ED7F5F /* LaunchScreen.storyboard */,
 				58970D1C1F189EAD00ED7F5F /* Info.plist */,
 				58970D0B1F189EAD00ED7F5F /* Supporting Files */,
 				58E62C531F4FB93800B6196B /* MyNormalCell.h */,
 				58E62C541F4FB93800B6196B /* MyNormalCell.m */,
-				58E62C591F4FC44100B6196B /* PrefixHeader.pch */,
 				58E62C5A1F4FCF9600B6196B /* CustomLayer.h */,
 				58E62C5B1F4FCF9600B6196B /* CustomLayer.m */,
 				58401EA31F557180001310CD /* MLImageNormalCell.h */,
@@ -435,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58970D1B1F189EAD00ED7F5F /* LaunchScreen.storyboard in Resources */,
+				5815EBD41F57A63B00853003 /* colorfulStreak.m4v in Resources */,
 				58970D181F189EAD00ED7F5F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +544,7 @@
 			files = (
 				58401EB51F5659C9001310CD /* AVPlayerLayerController.m in Sources */,
 				58401EB21F5659BC001310CD /* CATextLayerController.m in Sources */,
+				5815EBDA1F57EA9200853003 /* ReflectionView.m in Sources */,
 				58401EBE1F5659FB001310CD /* CATiledLayerController.m in Sources */,
 				58401EA51F557180001310CD /* MLImageNormalCell.m in Sources */,
 				58E62C5F1F5022E900B6196B /* KeyFrameAnimationController.m in Sources */,
@@ -519,6 +554,7 @@
 				58401EA81F55729A001310CD /* MLImageNormalModel.m in Sources */,
 				58970D131F189EAD00ED7F5F /* ViewController.m in Sources */,
 				58401ED11F569011001310CD /* SwitchCell.m in Sources */,
+				5815EBE71F58295400853003 /* TrackBallModel.m in Sources */,
 				58401EDB1F56B963001310CD /* ScrollingView.m in Sources */,
 				58970D101F189EAD00ED7F5F /* AppDelegate.m in Sources */,
 				58E62C621F502EA400B6196B /* GroupAnimationController.m in Sources */,
@@ -527,9 +563,11 @@
 				58401EBB1F5659ED001310CD /* CAReplicatorLayerController.m in Sources */,
 				58401EC41F565B40001310CD /* CAEAGLLayerController.m in Sources */,
 				58401EC71F565B51001310CD /* CATransformLayerController.m in Sources */,
+				58BA1B1E1F58FD59009A8B1C /* SpacePointModel.m in Sources */,
 				58401EC11F565A14001310CD /* CAShapeLayerController.m in Sources */,
 				58401EAC1F56599A001310CD /* CALayerController.m in Sources */,
 				58E62C651F5039B300B6196B /* TransformAnimationController.m in Sources */,
+				5815EBD71F57E1CC00853003 /* ReplicatorParameterCell.m in Sources */,
 				58E62C551F4FB93800B6196B /* MyNormalCell.m in Sources */,
 				58970D0D1F189EAD00ED7F5F /* main.m in Sources */,
 				58401EAF1F5659AD001310CD /* CAScrollLayerController.m in Sources */,
@@ -680,7 +718,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 49YMBTW8W3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/bjovov/Desktop/CoreAniationStudy/CoreAniationStudy/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/bjovov/CoreAnimationStudy/PrefixHeader.pch;
 				INFOPLIST_FILE = CoreAniationStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -696,7 +734,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 49YMBTW8W3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/bjovov/Desktop/CoreAniationStudy/CoreAniationStudy/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/bjovov/CoreAnimationStudy/PrefixHeader.pch;
 				INFOPLIST_FILE = CoreAniationStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

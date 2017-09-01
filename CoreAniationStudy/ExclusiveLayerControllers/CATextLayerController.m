@@ -73,9 +73,11 @@
     [attributeString setAttributes:attribute range:NSMakeRange(0, attributeString.length)];
     
     NSDictionary *uniteAttrite = @{
-                                   (__bridge id)kCTForegroundColorAttributeName : (__bridge id)[UIColor blueColor].CGColor,
-                                   (__bridge id)kCTUnderlineStyleAttributeName : (__bridge id)fontRed,
+                                   (__bridge id)kCTForegroundColorAttributeName : (__bridge id)[UIColor redColor].CGColor,
+                                   (__bridge id)kCTUnderlineStyleAttributeName : @(kCTUnderlineStyleDouble),
+                                   (__bridge id)kCTFontAttributeName : (__bridge id)fontRed,
                                    };
+    [attributeString setAttributes:uniteAttrite range:NSMakeRange(6, 5)];
     
     //显示文本
     _textLayer.string = attributeString;
