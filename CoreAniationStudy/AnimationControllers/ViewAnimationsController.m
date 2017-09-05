@@ -70,6 +70,7 @@
     animation.removedOnCompletion = NO;
     animation.repeatCount = HUGE_VALF;
     animation.autoreverses = YES;
+    animation.beginTime = CACurrentMediaTime() + 1.0;
     [self.snowLayer addAnimation:animation forKey:@"PositionAnimation"];
 }
 

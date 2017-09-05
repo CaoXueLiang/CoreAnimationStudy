@@ -46,9 +46,13 @@
 - (void)groupAnimation{
     CAAnimationGroup *group = [CAAnimationGroup animation];
     group.animations = @[[self pathKeyFrameAniamtion],[self roationAnimation]];
-    group.delegate=self;
-    group.duration=7.0;//设置动画时间，如果动画组中动画已经设置过动画属性则不再生效
-    group.beginTime=CACurrentMediaTime()+1;//延迟五秒执行
+    //group.delegate=self;
+    //设置动画时间，如果动画组中动画已经设置过动画属性则不再生效
+    group.duration=7.0;
+    group.removedOnCompletion = NO;
+    
+    //设置动画结束后，保持在终点位置
+    group.fillMode = kCAFillModeBoth;
     [self.snowLayer addAnimation:group forKey:@"groupAnimation"];
 }
 
@@ -62,15 +66,6 @@
     [layer setStrokeColor:[UIColor blueColor].CGColor];
     [layer setFillColor:[UIColor clearColor].CGColor];
     [self.view.layer addSublayer:layer];
-}
-
-#pragma mark - CAAnimationDelegate
-- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
-    [CATransaction begin];
-    [CATransaction setDisableActions:YES];
-    self.snowLayer.position = CGPointMake(250, 400);
-    [CATransaction commit];
-    /*取消了隐式动画,还是会闪烁一下*/
 }
 
 #pragma mark - Setter && Getter

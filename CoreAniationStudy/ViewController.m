@@ -14,6 +14,10 @@
 #import "GroupAnimationController.h"
 #import "TransformAnimationController.h"
 #import "MLImageNormalModel.h"
+#import "CustomTransformController.h"
+#import "BufferAnimationController.h"
+#import "CADisplayLinkAnimationController.h"
+#import "PhysicalModelAnimationController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *myTable;
@@ -112,6 +116,18 @@
         }else if (indexPath.row == 3){
             TransformAnimationController *controller = [[TransformAnimationController alloc]init];
             [self.navigationController pushViewController:controller animated:YES];
+        }else if (indexPath.row == 4){
+            CustomTransformController *controller = [[CustomTransformController alloc]init];
+            [self.navigationController pushViewController:controller animated:YES];
+        }else if (indexPath.row == 5){
+            BufferAnimationController *controller = [[BufferAnimationController alloc]init];
+            [self.navigationController pushViewController:controller animated:YES];
+        }else if (indexPath.row == 6){
+            CADisplayLinkAnimationController *controller = [[CADisplayLinkAnimationController alloc]init];
+            [self.navigationController pushViewController:controller animated:YES];
+        }else if (indexPath.row == 7){
+            PhysicalModelAnimationController *controller = [[PhysicalModelAnimationController alloc]init];
+            [self.navigationController pushViewController:controller animated:YES];
         }
     }
 }
@@ -133,7 +149,7 @@
 
 - (NSArray *)dataArray{
     if (!_dataArray) {
-        _dataArray = @[@"CoreAniamtion基础动画",@"CoreAniamtion关键帧动画",@"CoreAniamtion动画组",@"转场动画"];
+        _dataArray = @[@"CoreAniamtion基础动画",@"CoreAniamtion关键帧动画",@"CoreAniamtion动画组",@"转场动画",@"自定义转场动画",@"自定义缓冲函数动画",@"基于定时器的动画",@"物理模拟动画"];
     }
     return _dataArray;
 }
