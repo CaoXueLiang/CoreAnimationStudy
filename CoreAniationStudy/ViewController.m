@@ -18,6 +18,7 @@
 #import "BufferAnimationController.h"
 #import "CADisplayLinkAnimationController.h"
 #import "PhysicalModelAnimationController.h"
+#import "DrawController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *myTable;
@@ -37,14 +38,16 @@
 
 #pragma mark - UITableView M
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section == 0) {
         return self.exclusiveLayerArray.count;
-    }else{
+    }else if(section == 1){
         return self.dataArray.count;
+    }else{
+        return 1;
     }
 }
 
@@ -55,10 +58,14 @@
         cell.model = model;
         return cell;
         
-    }else{
+    }else if(indexPath.section == 1){
         NSString *currentString = self.dataArray[indexPath.row];
         MyNormalCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyNormalCell" forIndexPath:indexPath];
         [cell setTitle:currentString];
+        return cell;
+    }else{
+        MyNormalCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyNormalCell" forIndexPath:indexPath];
+        [cell setTitle:@"绘制"];
         return cell;
     }
 }
@@ -127,6 +134,13 @@
             [self.navigationController pushViewController:controller animated:YES];
         }else if (indexPath.row == 7){
             PhysicalModelAnimationController *controller = [[PhysicalModelAnimationController alloc]init];
+            [self.navigationController pushViewController:controller animated:YES];
+        }
+    }
+    
+    if (indexPath.section == 2) {
+        if (indexPath.row == 0) {
+            DrawController *controller = [[DrawController alloc]init];
             [self.navigationController pushViewController:controller animated:YES];
         }
     }

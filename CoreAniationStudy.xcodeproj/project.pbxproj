@@ -57,6 +57,8 @@
 		58E62C5F1F5022E900B6196B /* KeyFrameAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E62C5E1F5022E900B6196B /* KeyFrameAnimationController.m */; };
 		58E62C621F502EA400B6196B /* GroupAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E62C611F502EA400B6196B /* GroupAnimationController.m */; };
 		58E62C651F5039B300B6196B /* TransformAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E62C641F5039B300B6196B /* TransformAnimationController.m */; };
+		C30F08D22112DDE0009DD29F /* DrawController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30F08D12112DDE0009DD29F /* DrawController.m */; };
+		C30F08D52112DE00009DD29F /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = C30F08D42112DE00009DD29F /* DrawView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +209,10 @@
 		58E62C631F5039B300B6196B /* TransformAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformAnimationController.h; sourceTree = "<group>"; };
 		58E62C641F5039B300B6196B /* TransformAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformAnimationController.m; sourceTree = "<group>"; };
 		B4D1EA7757C6E9EA07045D3C /* libPods-CoreAniationStudy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreAniationStudy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30F08D02112DDE0009DD29F /* DrawController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawController.h; sourceTree = "<group>"; };
+		C30F08D12112DDE0009DD29F /* DrawController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawController.m; sourceTree = "<group>"; };
+		C30F08D32112DE00009DD29F /* DrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		C30F08D42112DE00009DD29F /* DrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
 		C74F8B687752F741502C30A6 /* Pods-CoreAniationStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreAniationStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreAniationStudy/Pods-CoreAniationStudy.release.xcconfig"; sourceTree = "<group>"; };
 		CD0A61FAEFA59B1DE486D6F2 /* Pods-CoreAniationStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreAniationStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreAniationStudy/Pods-CoreAniationStudy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -291,6 +297,8 @@
 				5815EBD91F57EA9200853003 /* ReflectionView.m */,
 				588901721F5E4C6B007A020A /* FallingButton.h */,
 				588901731F5E4C6B007A020A /* FallingButton.m */,
+				C30F08D32112DE00009DD29F /* DrawView.h */,
+				C30F08D42112DE00009DD29F /* DrawView.m */,
 			);
 			name = LayerViews;
 			path = SubLayers;
@@ -444,6 +452,7 @@
 		58970D0A1F189EAD00ED7F5F /* CoreAniationStudy */ = {
 			isa = PBXGroup;
 			children = (
+				C30F08CF2112B23D009DD29F /* OtherControllers */,
 				588901311F5E393F007A020A /* Vender */,
 				5815EBE41F5828EB00853003 /* Models */,
 				58401ED81F56B8DB001310CD /* LayerViews */,
@@ -520,6 +529,15 @@
 			path = AnimationControllers;
 			sourceTree = "<group>";
 		};
+		C30F08CF2112B23D009DD29F /* OtherControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C30F08D02112DDE0009DD29F /* DrawController.h */,
+				C30F08D12112DDE0009DD29F /* DrawController.m */,
+			);
+			path = OtherControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -590,7 +608,7 @@
 				TargetAttributes = {
 					58970D071F189EAD00ED7F5F = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 49YMBTW8W3;
+						DevelopmentTeam = AWBA2L5NNX;
 						ProvisioningStyle = Automatic;
 					};
 					58970D201F189EAD00ED7F5F = {
@@ -710,6 +728,7 @@
 				58401EB51F5659C9001310CD /* AVPlayerLayerController.m in Sources */,
 				58401EB21F5659BC001310CD /* CATextLayerController.m in Sources */,
 				5815EBDA1F57EA9200853003 /* ReflectionView.m in Sources */,
+				C30F08D22112DDE0009DD29F /* DrawController.m in Sources */,
 				58401EBE1F5659FB001310CD /* CATiledLayerController.m in Sources */,
 				58401EA51F557180001310CD /* MLImageNormalCell.m in Sources */,
 				58E62C5F1F5022E900B6196B /* KeyFrameAnimationController.m in Sources */,
@@ -732,6 +751,7 @@
 				585A262E1F5D4128006C638C /* BufferAnimationController.m in Sources */,
 				58401EBB1F5659ED001310CD /* CAReplicatorLayerController.m in Sources */,
 				58401EC41F565B40001310CD /* CAEAGLLayerController.m in Sources */,
+				C30F08D52112DE00009DD29F /* DrawView.m in Sources */,
 				58401EC71F565B51001310CD /* CATransformLayerController.m in Sources */,
 				58BA1B1E1F58FD59009A8B1C /* SpacePointModel.m in Sources */,
 				58401EC11F565A14001310CD /* CAShapeLayerController.m in Sources */,
@@ -886,10 +906,10 @@
 			baseConfigurationReference = CD0A61FAEFA59B1DE486D6F2 /* Pods-CoreAniationStudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 49YMBTW8W3;
+				DEVELOPMENT_TEAM = AWBA2L5NNX;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/bjovov/CoreAnimationStudy/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/caoxueliang/CoreAnimationStudy/PrefixHeader.pch;
 				INFOPLIST_FILE = CoreAniationStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -907,10 +927,10 @@
 			baseConfigurationReference = C74F8B687752F741502C30A6 /* Pods-CoreAniationStudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 49YMBTW8W3;
+				DEVELOPMENT_TEAM = AWBA2L5NNX;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/bjovov/CoreAnimationStudy/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/caoxueliang/CoreAnimationStudy/PrefixHeader.pch;
 				INFOPLIST_FILE = CoreAniationStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
